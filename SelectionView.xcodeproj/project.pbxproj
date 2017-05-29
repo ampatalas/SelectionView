@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EEA9F2DF1EDBFC05004EBDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F2DE1EDBFC05004EBDC8 /* AppDelegate.swift */; };
-		EEA9F2E11EDBFC05004EBDC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F2E01EDBFC05004EBDC8 /* ViewController.swift */; };
-		EEA9F2E41EDBFC05004EBDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F2E21EDBFC05004EBDC8 /* Main.storyboard */; };
-		EEA9F2E61EDBFC05004EBDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F2E51EDBFC05004EBDC8 /* Assets.xcassets */; };
-		EEA9F2E91EDBFC05004EBDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F2E71EDBFC05004EBDC8 /* LaunchScreen.storyboard */; };
-		EEA9F2F41EDBFC05004EBDC8 /* SelectViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F2F31EDBFC05004EBDC8 /* SelectViewTests.swift */; };
+		EEA9F31B1EDC4191004EBDC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F3131EDC4191004EBDC8 /* AppDelegate.swift */; };
+		EEA9F31C1EDC4191004EBDC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F3141EDC4191004EBDC8 /* Assets.xcassets */; };
+		EEA9F31D1EDC4191004EBDC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F3151EDC4191004EBDC8 /* LaunchScreen.storyboard */; };
+		EEA9F31E1EDC4191004EBDC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F3171EDC4191004EBDC8 /* Main.storyboard */; };
+		EEA9F31F1EDC4191004EBDC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F3191EDC4191004EBDC8 /* Info.plist */; };
+		EEA9F3201EDC4191004EBDC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F31A1EDC4191004EBDC8 /* ViewController.swift */; };
+		EEA9F3241EDC41A1004EBDC8 /* SelectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F3221EDC41A1004EBDC8 /* SelectionItemView.swift */; };
+		EEA9F3251EDC41A1004EBDC8 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA9F3231EDC41A1004EBDC8 /* SelectionView.swift */; };
+		EEA9F3281EDC41C9004EBDC8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEA9F3271EDC41C9004EBDC8 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EEA9F2DB1EDBFC05004EBDC8 /* SelectView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEA9F2DE1EDBFC05004EBDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEA9F2E01EDBFC05004EBDC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEA9F2E31EDBFC05004EBDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EEA9F2E51EDBFC05004EBDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EEA9F2E81EDBFC05004EBDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EEA9F2EA1EDBFC05004EBDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EEA9F2EF1EDBFC05004EBDC8 /* SelectViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EEA9F2F31EDBFC05004EBDC8 /* SelectViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewTests.swift; sourceTree = "<group>"; };
-		EEA9F2F51EDBFC05004EBDC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA9F2DB1EDBFC05004EBDC8 /* SelectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA9F2EF1EDBFC05004EBDC8 /* SelectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEA9F3131EDC4191004EBDC8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEA9F3141EDC4191004EBDC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEA9F3161EDC4191004EBDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEA9F3181EDC4191004EBDC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEA9F3191EDC4191004EBDC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEA9F31A1EDC4191004EBDC8 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEA9F3221EDC41A1004EBDC8 /* SelectionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionItemView.swift; sourceTree = "<group>"; };
+		EEA9F3231EDC41A1004EBDC8 /* SelectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		EEA9F3271EDC41C9004EBDC8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,9 @@
 		EEA9F2D21EDBFC05004EBDC8 = {
 			isa = PBXGroup;
 			children = (
-				EEA9F2DD1EDBFC05004EBDC8 /* SelectView */,
-				EEA9F2F21EDBFC05004EBDC8 /* SelectViewTests */,
+				EEA9F3121EDC4191004EBDC8 /* SelectionViewExample */,
+				EEA9F3211EDC41A1004EBDC8 /* SelectionView */,
+				EEA9F3261EDC41C9004EBDC8 /* SelectionViewTests */,
 				EEA9F2DC1EDBFC05004EBDC8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,40 +73,48 @@
 		EEA9F2DC1EDBFC05004EBDC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EEA9F2DB1EDBFC05004EBDC8 /* SelectView.app */,
-				EEA9F2EF1EDBFC05004EBDC8 /* SelectViewTests.xctest */,
+				EEA9F2DB1EDBFC05004EBDC8 /* SelectionView.app */,
+				EEA9F2EF1EDBFC05004EBDC8 /* SelectionViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EEA9F2DD1EDBFC05004EBDC8 /* SelectView */ = {
+		EEA9F3121EDC4191004EBDC8 /* SelectionViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				EEA9F2DE1EDBFC05004EBDC8 /* AppDelegate.swift */,
-				EEA9F2E01EDBFC05004EBDC8 /* ViewController.swift */,
-				EEA9F2E21EDBFC05004EBDC8 /* Main.storyboard */,
-				EEA9F2E51EDBFC05004EBDC8 /* Assets.xcassets */,
-				EEA9F2E71EDBFC05004EBDC8 /* LaunchScreen.storyboard */,
-				EEA9F2EA1EDBFC05004EBDC8 /* Info.plist */,
+				EEA9F3131EDC4191004EBDC8 /* AppDelegate.swift */,
+				EEA9F3141EDC4191004EBDC8 /* Assets.xcassets */,
+				EEA9F3151EDC4191004EBDC8 /* LaunchScreen.storyboard */,
+				EEA9F3171EDC4191004EBDC8 /* Main.storyboard */,
+				EEA9F3191EDC4191004EBDC8 /* Info.plist */,
+				EEA9F31A1EDC4191004EBDC8 /* ViewController.swift */,
 			);
-			path = SelectView;
+			path = SelectionViewExample;
 			sourceTree = "<group>";
 		};
-		EEA9F2F21EDBFC05004EBDC8 /* SelectViewTests */ = {
+		EEA9F3211EDC41A1004EBDC8 /* SelectionView */ = {
 			isa = PBXGroup;
 			children = (
-				EEA9F2F31EDBFC05004EBDC8 /* SelectViewTests.swift */,
-				EEA9F2F51EDBFC05004EBDC8 /* Info.plist */,
+				EEA9F3221EDC41A1004EBDC8 /* SelectionItemView.swift */,
+				EEA9F3231EDC41A1004EBDC8 /* SelectionView.swift */,
 			);
-			path = SelectViewTests;
+			path = SelectionView;
+			sourceTree = "<group>";
+		};
+		EEA9F3261EDC41C9004EBDC8 /* SelectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEA9F3271EDC41C9004EBDC8 /* Info.plist */,
+			);
+			path = SelectionViewTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EEA9F2DA1EDBFC05004EBDC8 /* SelectView */ = {
+		EEA9F2DA1EDBFC05004EBDC8 /* SelectionView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEA9F2F81EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectView" */;
+			buildConfigurationList = EEA9F2F81EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectionView" */;
 			buildPhases = (
 				EEA9F2D71EDBFC05004EBDC8 /* Sources */,
 				EEA9F2D81EDBFC05004EBDC8 /* Frameworks */,
@@ -111,14 +124,14 @@
 			);
 			dependencies = (
 			);
-			name = SelectView;
+			name = SelectionView;
 			productName = SelectView;
-			productReference = EEA9F2DB1EDBFC05004EBDC8 /* SelectView.app */;
+			productReference = EEA9F2DB1EDBFC05004EBDC8 /* SelectionView.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EEA9F2EE1EDBFC05004EBDC8 /* SelectViewTests */ = {
+		EEA9F2EE1EDBFC05004EBDC8 /* SelectionViewTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EEA9F2FB1EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectViewTests" */;
+			buildConfigurationList = EEA9F2FB1EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectionViewTests" */;
 			buildPhases = (
 				EEA9F2EB1EDBFC05004EBDC8 /* Sources */,
 				EEA9F2EC1EDBFC05004EBDC8 /* Frameworks */,
@@ -129,9 +142,9 @@
 			dependencies = (
 				EEA9F2F11EDBFC05004EBDC8 /* PBXTargetDependency */,
 			);
-			name = SelectViewTests;
+			name = SelectionViewTests;
 			productName = SelectViewTests;
-			productReference = EEA9F2EF1EDBFC05004EBDC8 /* SelectViewTests.xctest */;
+			productReference = EEA9F2EF1EDBFC05004EBDC8 /* SelectionViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EEA9F2D61EDBFC05004EBDC8 /* Build configuration list for PBXProject "SelectView" */;
+			buildConfigurationList = EEA9F2D61EDBFC05004EBDC8 /* Build configuration list for PBXProject "SelectionView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -168,8 +181,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EEA9F2DA1EDBFC05004EBDC8 /* SelectView */,
-				EEA9F2EE1EDBFC05004EBDC8 /* SelectViewTests */,
+				EEA9F2DA1EDBFC05004EBDC8 /* SelectionView */,
+				EEA9F2EE1EDBFC05004EBDC8 /* SelectionViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,9 +192,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA9F2E91EDBFC05004EBDC8 /* LaunchScreen.storyboard in Resources */,
-				EEA9F2E61EDBFC05004EBDC8 /* Assets.xcassets in Resources */,
-				EEA9F2E41EDBFC05004EBDC8 /* Main.storyboard in Resources */,
+				EEA9F31F1EDC4191004EBDC8 /* Info.plist in Resources */,
+				EEA9F31E1EDC4191004EBDC8 /* Main.storyboard in Resources */,
+				EEA9F31D1EDC4191004EBDC8 /* LaunchScreen.storyboard in Resources */,
+				EEA9F3281EDC41C9004EBDC8 /* Info.plist in Resources */,
+				EEA9F31C1EDC4191004EBDC8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA9F2E11EDBFC05004EBDC8 /* ViewController.swift in Sources */,
-				EEA9F2DF1EDBFC05004EBDC8 /* AppDelegate.swift in Sources */,
+				EEA9F3241EDC41A1004EBDC8 /* SelectionItemView.swift in Sources */,
+				EEA9F3201EDC4191004EBDC8 /* ViewController.swift in Sources */,
+				EEA9F31B1EDC4191004EBDC8 /* AppDelegate.swift in Sources */,
+				EEA9F3251EDC41A1004EBDC8 /* SelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,7 +225,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA9F2F41EDBFC05004EBDC8 /* SelectViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,26 +233,26 @@
 /* Begin PBXTargetDependency section */
 		EEA9F2F11EDBFC05004EBDC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EEA9F2DA1EDBFC05004EBDC8 /* SelectView */;
+			target = EEA9F2DA1EDBFC05004EBDC8 /* SelectionView */;
 			targetProxy = EEA9F2F01EDBFC05004EBDC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EEA9F2E21EDBFC05004EBDC8 /* Main.storyboard */ = {
+		EEA9F3151EDC4191004EBDC8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EEA9F2E31EDBFC05004EBDC8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EEA9F2E71EDBFC05004EBDC8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEA9F2E81EDBFC05004EBDC8 /* Base */,
+				EEA9F3161EDC4191004EBDC8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEA9F3171EDC4191004EBDC8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEA9F3181EDC4191004EBDC8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -341,7 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SelectView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SelectionViewExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ampatalas.SelectView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,7 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = SelectView/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SelectionViewExample/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ampatalas.SelectView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,7 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ampatalas.SelectViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectView.app/SelectView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionView.app/SelectionView";
 			};
 			name = Debug;
 		};
@@ -385,14 +401,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ampatalas.SelectViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectView.app/SelectView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelectionView.app/SelectionView";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EEA9F2D61EDBFC05004EBDC8 /* Build configuration list for PBXProject "SelectView" */ = {
+		EEA9F2D61EDBFC05004EBDC8 /* Build configuration list for PBXProject "SelectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEA9F2F61EDBFC05004EBDC8 /* Debug */,
@@ -401,21 +417,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EEA9F2F81EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectView" */ = {
+		EEA9F2F81EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEA9F2F91EDBFC05004EBDC8 /* Debug */,
 				EEA9F2FA1EDBFC05004EBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		EEA9F2FB1EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectViewTests" */ = {
+		EEA9F2FB1EDBFC05004EBDC8 /* Build configuration list for PBXNativeTarget "SelectionViewTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EEA9F2FC1EDBFC05004EBDC8 /* Debug */,
 				EEA9F2FD1EDBFC05004EBDC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

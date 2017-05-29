@@ -9,10 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var item: SelectionItemView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        item?.title = "Title"
     }
 
     override func didReceiveMemoryWarning() {
