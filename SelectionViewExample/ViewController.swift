@@ -10,17 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var item: SelectionItemView?
+    @IBOutlet var singleChoiceItem: SelectionView?
+    @IBOutlet var multipleChoiceItem: SelectionView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        item?.title = "Title"
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        singleChoiceItem?.title = "Single choice"
+        singleChoiceItem?.selectionType = .single
+        singleChoiceItem?.options = ["Option 1", "Option 2", "Option 3", "Option 4"]
+        
+        multipleChoiceItem?.title = "Multiple choice"
+        multipleChoiceItem?.options = ["Option 1", "Option 2", "Option 3", "Option 4"]
     }
 
 

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,27 +22,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cql-9d-FC4" customClass="SelectionItemView" customModule="SelectionView" customModuleProvider="target">
-                                <rect key="frame" x="137" y="313.5" width="100" height="40"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cql-9d-FC4" customClass="SelectionView" customModule="SelectionView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="48" width="343" height="150"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="GGo-He-38t"/>
-                                    <constraint firstAttribute="width" constant="100" id="Gyl-2y-y7r"/>
+                                    <constraint firstAttribute="height" constant="150" id="ujB-Xw-eeY"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-Gr-OQS" customClass="SelectionView" customModule="SelectionView" customModuleProvider="target">
+                                <rect key="frame" x="16" y="218" width="343" height="150"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="cxg-Hy-spM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-es-Z4x">
+                                <rect key="frame" x="16" y="626" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6O-k0-RsU">
+                                <rect key="frame" x="16" y="597" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cql-9d-FC4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L5v-0r-O2s"/>
-                            <constraint firstItem="cql-9d-FC4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dTs-9K-qVd"/>
+                            <constraint firstItem="H6O-k0-RsU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7yJ-hr-Dlo"/>
+                            <constraint firstItem="5cU-Gr-OQS" firstAttribute="top" secondItem="cql-9d-FC4" secondAttribute="bottom" constant="20" id="F88-ra-eeG"/>
+                            <constraint firstItem="H6O-k0-RsU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="IXT-8u-f8D"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V3l-es-Z4x" secondAttribute="bottom" constant="20" id="JFS-Xy-nAh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V3l-es-Z4x" secondAttribute="trailing" id="Okk-P5-h7d"/>
+                            <constraint firstItem="V3l-es-Z4x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QFG-1M-cEL"/>
+                            <constraint firstItem="cql-9d-FC4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RTS-dm-V3L"/>
+                            <constraint firstItem="cql-9d-FC4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="RfU-wU-Tfp"/>
+                            <constraint firstItem="5cU-Gr-OQS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gBx-ey-fq2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cql-9d-FC4" secondAttribute="trailing" id="ry3-Ny-4f0"/>
+                            <constraint firstItem="V3l-es-Z4x" firstAttribute="top" secondItem="H6O-k0-RsU" secondAttribute="bottom" constant="8" id="wRM-N1-1Iv"/>
+                            <constraint firstItem="5cU-Gr-OQS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zdq-Xb-gON"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="item" destination="cql-9d-FC4" id="VHP-Vj-wQz"/>
+                        <outlet property="multipleChoiceItem" destination="cql-9d-FC4" id="y32-Gw-iS2"/>
+                        <outlet property="singleChoiceItem" destination="5cU-Gr-OQS" id="dT2-nQ-dmB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
