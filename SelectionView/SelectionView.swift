@@ -47,45 +47,43 @@ class SelectionView: UIView {
         }
         itemViews.removeAll()
         
+        var modY = 0
+        var modX = 0
+        
         // Recreate
         for option in options {
             let itemView = SelectionItemView()
             itemView.delegate = self
             itemView.title = option
-            
+            itemView.translatesAutoresizingMaskIntoConstraints = false
             
             addSubview(itemView)
-            itemViews.append(itemView)
-        }
-    }
-    
-    private func setItemsFrame() {
-        var modY = 0
-        var modX = 0
-        
-        for item in itemViews {
-            let width: CGFloat = (bounds.width - 3 * itemMargin) / 2
-            let x = modX % 2 == 0 ? itemMargin : width + 2 * itemMargin
-            let y = itemMargin + CGFloat(modY) * (itemHeight + itemMargin)
-            let frame = CGRect(x: x, y: y, width: width, height: itemHeight)
-            item.frame = frame
-            
-            if (modX % 2 != 0) {
-                modY += 1
-            }
+            setConstraints(itemView: itemView, modY: &modY, modX: modX)
             
             modX += 1
+            itemViews.append(itemView)
         }
         
         if autoHeight {
-            let viewHeight = itemMargin + CGFloat(modY) * (itemHeight + itemMargin)
-            heightAnchor.constraint(equalToConstant: viewHeight).isActive = true
+            let height = (itemMargin + itemHeight) * CGFloat(modY) + itemMargin
+            heightAnchor.constraint(equalToConstant: height).isActive = true
         }
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setItemsFrame()
+    private func setConstraints(itemView: SelectionItemView, modY: inout Int, modX: Int) {
+        itemView.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.5, constant: -itemMargin * 1.5).isActive = true
+        itemView.heightAnchor.constraint(equalToConstant: itemHeight).isActive = true
+        
+        let heightConstant = (itemMargin + itemHeight) * CGFloat(modY) + itemMargin
+        itemView.topAnchor.constraint(equalTo: topAnchor, constant: heightConstant).isActive = true
+        
+        if (modX % 2 != 0) {
+            modY += 1
+            itemView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: (-1) * itemMargin).isActive = true
+        }
+        else {
+            itemView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: itemMargin).isActive = true
+        }
     }
     
     private func refreshSelection() {
