@@ -43,6 +43,7 @@ public class SelectionView: UIView {
     public var itemMargin: CGFloat = 8.0
     public var autoHeight = true
     public var titleLabel = UILabel()
+    public var deselectable = false
     
     public weak var delegate: SelectionViewDelegate?
     
@@ -127,11 +128,17 @@ extension SelectionView: SelectionItemViewDelegate {
     func itemSelected(sender: SelectionItemView) {
         switch selectionType {
         case .single:
-            for itemView in itemViews {
-                itemView.selected = itemView == sender
+            if sender.selected && deselectable {
+                sender.selected = !sender.selected
+            }
+            else {
+                for itemView in itemViews {
+                    itemView.selected = itemView == sender
+                }
             }
             break
         default:
+            sender.selected = !sender.selected
             break
         }
         

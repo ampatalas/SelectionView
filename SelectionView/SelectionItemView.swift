@@ -70,7 +70,6 @@ class SelectionItemView: UIView {
     }
     
     func onTap() {
-        selected = !selected
         delegate?.itemSelected(sender: self)
     }
     
