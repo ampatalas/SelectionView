@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol SelectionViewDelegate: class {
-    func didSelectItems(sender: SelectionView)
+    func didSelectItems(sender: SelectionView, items: [String])
 }
 
 public enum SelectionType {
@@ -43,6 +43,8 @@ public class SelectionView: UIView {
     public var itemMargin: CGFloat = 8.0
     public var autoHeight = true
     public var titleLabel = UILabel()
+    
+    public weak var delegate: SelectionViewDelegate?
     
     fileprivate var itemViews = [SelectionItemView]()
     
@@ -132,6 +134,9 @@ extension SelectionView: SelectionItemViewDelegate {
         default:
             break
         }
+        
+        let filteredItems = itemViews.filter{ $0.selected }.map{ $0.title }
+        delegate?.didSelectItems(sender: self, items: filteredItems)
     }
     
 }
